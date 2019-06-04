@@ -6,6 +6,6 @@
 
 	document.body.innerHTML = document.body.innerHTML.replace(usdRegex, (_, val) => {
 		const numval = Number(val);
-		return Number.isNaN(numval) ? val : `₹ ${usdToRupeeRatio * numval}`;
+		return Number.isNaN(numval) ? `$ ${val}` : `₹ ${usdToRupeeRatio * numval}`;
 	});
 })();
