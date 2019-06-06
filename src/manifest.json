@@ -3,11 +3,10 @@
 	"name": "Realtime Currency Converter",
 	"version": "0.0.1",
 	"description": "Browser Extenstion to convert foreign currency to local currency, realtime.",
-	"content_scripts": [{
-		"matches": ["<all_urls>"],
-		"all_frames": true,
-		"js": ["js/contentScript.js"],
-		"run_at": "document_end"
-	}],
+	"browser_action": {},
+	"background": {
+		"scripts": ["js/background.js"],
+		"persistent": false
+	},
 	"permissions": ["activeTab", "storage"]
 }
