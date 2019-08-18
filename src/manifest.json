@@ -8,5 +8,14 @@
 		"scripts": ["js/background.js"],
 		"persistent": false
 	},
+	"commands": {
+		"convert_currency": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+K",
+				"mac": "Command+Shift+K"
+			},
+			"description": "Currency Convertor Shortcut"
+		}
+	},
 	"permissions": ["activeTab", "storage"]
 }
