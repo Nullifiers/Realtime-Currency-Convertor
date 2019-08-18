@@ -1,4 +1,4 @@
-(function() {
+(function () {
 	function replace($node, regex, replaceMethod) {
 		const queue = [$node];
 		while (queue.length) {
@@ -15,8 +15,7 @@
 
 			if (top.nodeType === Node.ELEMENT_NODE && regex.test(top.innerHTML)) {
 				top.innerHTML = top.innerHTML.replace(regex, replaceMethod.bind(top));
-			}
-			else if (top.nodeType === Node.TEXT_NODE && regex.test(top.nodeValue)) {
+			} else if (top.nodeType === Node.TEXT_NODE && regex.test(top.nodeValue)) {
 				top.nodeValue = top.nodeValue.replace(regex, replaceMethod.bind(top));
 			}
 		}
@@ -29,7 +28,10 @@
 	const currencySymbols = ['\\$', '€'];
 	const currencyRegex = new RegExp(`(${currencySymbols.join('|')})\\s?(\\d+(?:,\\d{2,3})*(?:\\.\\d+)?)`, 'g');
 
-	const INR = new Intl.NumberFormat('en-IN', {style: 'currency', currency: 'INR'});
+	const INR = new Intl.NumberFormat('en-IN', {
+		style: 'currency',
+		currency: 'INR'
+	});
 
 	const spanStyle = 'background: rgba(220, 220, 220, 0.7); color: #333; padding: 2px 5px; border-radius: 3px';
 	const format = price => `<span style="${spanStyle}">${INR.format(price)}</span>`;
