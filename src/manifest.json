@@ -2,11 +2,20 @@
 	"manifest_version": 2,
 	"name": "Realtime Currency Converter",
 	"version": "0.0.2",
-	"description": "Browser Extenstion to convert foreign currency to local currency, realtime.",
+	"description": "Browser Extension to convert foreign currency to local currency, realtime.",
 	"browser_action": {},
 	"background": {
 		"scripts": ["js/background.js"],
 		"persistent": false
+	},
+	"commands": {
+		"convert_currency": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+K",
+				"mac": "Command+Shift+K"
+			},
+			"description": "Currency Convertor Shortcut"
+		}
 	},
 	"permissions": ["activeTab", "storage"]
 }
