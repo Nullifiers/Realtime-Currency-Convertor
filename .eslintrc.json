@@ -1,0 +1,19 @@
+{
+    "env": {
+        "browser": true,
+		"es6": true,
+		"webextensions": true
+    },
+	"extends": "eslint:recommended",
+    "globals": {
+       "chrome": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+		"indent": ["warn", "tab"],
+		"max-len": ["warn", {"code": 100}]
+    }
+}
