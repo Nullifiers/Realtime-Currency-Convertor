@@ -1,3 +1,11 @@
+function executeScript(id) {
+	chrome.tabs.executeScript(id, {
+		runAt: 'document_end',
+		allFrames: true,
+		file: 'js/contentScript.js',
+	});
+}
+
 chrome.browserAction.onClicked.addListener(tab => executeScript(tab.id));
 
 chrome.commands.onCommand.addListener(command => {
@@ -8,11 +16,3 @@ chrome.commands.onCommand.addListener(command => {
 		}, tabs => executeScript(tabs[0].id));
 	}
 });
-
-function executeScript(id) {
-	chrome.tabs.executeScript(id, {
-		runAt: 'document_end',
-		allFrames: true,
-		file: 'js/contentScript.js',
-	});
-}
