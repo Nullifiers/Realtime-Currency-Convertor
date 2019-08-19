@@ -9,7 +9,7 @@ function executeScript(id) {
 chrome.browserAction.onClicked.addListener(tab => executeScript(tab.id));
 
 chrome.commands.onCommand.addListener(command => {
-	if (command !== "convert_currency") {
+    if (command !== "convert_currency") {
         return;
     }
     chrome.tabs.query({
