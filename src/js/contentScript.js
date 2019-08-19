@@ -26,14 +26,16 @@
 		'€': 77.82,
 	};
 	const currencySymbols = ['\\$', '€'];
-	const currencyRegex = new RegExp(`(${currencySymbols.join('|')})\\s?(\\d+(?:,\\d{2,3})*(?:\\.\\d+)?)`, 'g');
+	const currencyRegex = new RegExp(
+		`(${currencySymbols.join('|')})\\s?(\\d+(?:,\\d{2,3})*(?:\\.\\d+)?)`, 'g');
 
 	const INR = new Intl.NumberFormat('en-IN', {
 		style: 'currency',
 		currency: 'INR'
 	});
 
-	const spanStyle = 'background: rgba(220, 220, 220, 0.7); color: #333; padding: 2px 5px; border-radius: 3px';
+	const spanStyle = `background: rgba(220, 220, 220, 0.7);
+						color: #333; padding: 2px 5px; border-radius: 3px`;
 	const format = price => `<span style="${spanStyle}">${INR.format(price)}</span>`;
 
 	replace(document.body, currencyRegex, function (_, currency, val) {
