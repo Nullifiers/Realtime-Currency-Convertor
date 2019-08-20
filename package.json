@@ -2,7 +2,6 @@
 	"name": "realtime-currency-convertor",
 	"version": "1.0.0",
 	"description": "Realtime Currency Convertor",
-	"main": "background.js",
 	"dependencies": {},
 	"devDependencies": {
 		"eslint": "^6.2.0",
