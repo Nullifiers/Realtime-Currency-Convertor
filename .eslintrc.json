@@ -13,7 +13,25 @@
 		"sourceType": "module"
 	},
 	"rules": {
-		"indent": ["warn", "tab"],
-		"max-len": ["warn", {"code": 100}]
+		"indent": [
+			"warn",
+			"tab"
+		],
+		"max-len": [
+			"warn",
+			{
+				"code": 100
+			}
+		],
+		"class-methods-use-this": "warn",
+		"consistent-return": "warn",
+		"curly": "warn",
+		"default-case": "error",
+		"dot-notation": "warn",
+		"eqeqeq": "error",
+		"no-useless-return": "warn",
+		"no-unused-expressions": "error",
+		"no-useless-call": "warn",
+		"no-useless-concat": "warn",
 	}
 }
