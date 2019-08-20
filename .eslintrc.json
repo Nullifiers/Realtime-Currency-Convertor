@@ -13,6 +13,15 @@
 		"sourceType": "module"
 	},
 	"rules": {
+		"class-methods-use-this": "warn",
+		"consistent-return": "warn",
+		"curly": [
+			"error",
+			"multi-line"
+		],
+		"default-case": "error",
+		"dot-notation": "warn",
+		"eqeqeq": "error",
 		"indent": [
 			"warn",
 			"tab"
@@ -23,15 +32,9 @@
 				"code": 100
 			}
 		],
-		"class-methods-use-this": "warn",
-		"consistent-return": "warn",
-		"curly": "warn",
-		"default-case": "error",
-		"dot-notation": "warn",
-		"eqeqeq": "error",
-		"no-useless-return": "warn",
 		"no-unused-expressions": "error",
-		"no-useless-call": "warn",
-		"no-useless-concat": "warn",
+		"no-useless-call": "error",
+		"no-useless-concat": "error",
+		"no-useless-return": "error"
 	}
 }
