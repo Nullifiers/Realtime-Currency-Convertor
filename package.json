@@ -1,6 +1,6 @@
 {
 	"name": "realtime-currency-convertor",
-	"version": "1.0.0",
+	"version": "0.0.4",
 	"description": "Realtime Currency Convertor",
 	"dependencies": {},
 	"devDependencies": {
