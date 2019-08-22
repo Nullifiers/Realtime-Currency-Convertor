@@ -1,0 +1,40 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"webextensions": true
+	},
+	"extends": "eslint:recommended",
+	"globals": {
+		"chrome": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module"
+	},
+	"rules": {
+		"class-methods-use-this": "warn",
+		"consistent-return": "warn",
+		"curly": [
+			"error",
+			"multi-line"
+		],
+		"default-case": "error",
+		"dot-notation": "warn",
+		"eqeqeq": "error",
+		"indent": [
+			"warn",
+			"tab"
+		],
+		"max-len": [
+			"warn",
+			{
+				"code": 100
+			}
+		],
+		"no-unused-expressions": "error",
+		"no-useless-call": "error",
+		"no-useless-concat": "error",
+		"no-useless-return": "error"
+	}
+}
