@@ -10,3 +10,7 @@ Browser Extension to convert foreign currency to local currency, real time.
   1. Simply press the extension icon and your converted currency will be highlighted in the article.
 
   2. Press the combo of `Ctrl+Shift+K` in the case of Windows/Linux or `Cmd+Shift+K` in the case of Mac computers to get the same result as in 1st case.
+  
+## Script(s):-
+
+- `npm run lint`: To run ESLint linter rules in `src` folder
