@@ -18,7 +18,7 @@
 	"scripts": {
 		"lint": "eslint ./src --fix",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "rm -rf dist && babel src --out-dir dist"
+		"build": "rm -rf dist && babel src --out-dir dist && cp -r src/manifest.json dist"
 	},
 	"repository": {
 		"type": "git",
