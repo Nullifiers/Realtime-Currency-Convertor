@@ -4,6 +4,10 @@
 	"description": "Realtime Currency Convertor",
 	"dependencies": {},
 	"devDependencies": {
+		"@babel/cli": "^7.5.5",
+		"@babel/core": "^7.5.5",
+		"@babel/plugin-transform-arrow-functions": "^7.2.0",
+		"@babel/preset-env": "^7.5.5",
 		"eslint": "^6.2.0",
 		"eslint-config-standard": "^13.0.1",
 		"eslint-plugin-import": "^2.18.2",
