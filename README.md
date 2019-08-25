@@ -14,3 +14,4 @@ Browser Extension to convert foreign currency to local currency, real time.
 ## Script(s):-
 
 - `npm run lint`: To run ESLint linter rules in `src` folder
+- `npm run build`: To create a transpiled `dist` folder which can be then deployed to chrome.
